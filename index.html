@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cultured Medical Transport | Gulf Coast Professional Care</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9fa",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-container": "#edeeef",
+                        "secondary": "#735c00",
+                        "tertiary-fixed-dim": "#ffb4ac",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-background": "#191c1d",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-fixed": "#ffe088",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-fixed": "#410003",
+                        "on-secondary-container": "#745c00",
+                        "surface-tint": "#5e5e5e",
+                        "outline": "#7e7576",
+                        "on-tertiary-fixed-variant": "#92030f",
+                        "primary": "#000000",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fed65b",
+                        "tertiary-fixed": "#ffdad6",
+                        "tertiary-container": "#410003",
+                        "surface-bright": "#f8f9fa",
+                        "outline-variant": "#cfc4c5",
+                        "inverse-surface": "#2e3132",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#241a00",
+                        "background": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-tertiary-container": "#ea4b44",
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface-variant": "#4c4546",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#1b1b1b",
+                        "surface-dim": "#d9dadb",
+                        "on-surface": "#191c1d",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-variant": "#e1e3e4",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary-container": "#848484"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "margin-desktop": "64px",
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .tonal-elevation {
+            border: 1px solid #E9ECEF;
+            transition: all 0.3s ease;
+        }
+        .tonal-elevation:hover {
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #735c00;
+        }
+
+        .text-gold { color: #fed65b; }
+        .bg-gold { background-color: #fed65b; }
+        .border-gold { border-color: #fed65b; }
+    
+:root{
+--lux-gold:#C89B3C;
+--lux-gold-light:#E0BC63;
+--lux-black:#050505;
+}
+body,*{font-family:'Montserrat',sans-serif!important;}
+header{background:#050505!important;padding-top:0!important;}
+.hero-gradient{background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.72) 50%,rgba(0,0,0,.45))!important;}
+.text-gold{color:var(--lux-gold)!important;}
+.tonal-elevation{
+border:1px solid #ececec!important;
+border-radius:18px!important;
+transition:.35s ease!important;
+}
+.tonal-elevation:hover{
+transform:translateY(-8px)!important;
+box-shadow:0 20px 40px rgba(0,0,0,.08)!important;
+border-color:var(--lux-gold)!important;
+}
+#fleet,.bg-primary{background:#070707!important;}
+form input,form select,form textarea{
+min-height:58px;border-radius:12px!important;
+}
+form textarea{min-height:140px;}
+button[type=submit]{
+background:linear-gradient(135deg,#E0BC63,#C89B3C)!important;
+color:#000!important;
+font-weight:700!important;
+}
+footer{
+background:#050505!important;
+border-top:3px solid #C89B3C!important;
+}
+
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+
+<header class="fixed top-0 w-full z-50 bg-black text-white border-b border-white/10">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 border-b border-white/10">
+<div class="flex items-center gap-4">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOlZtbpxmW9TnsqGh186NAdQ4-W5MNZhQ7wgMRXTteA0ksGRCa8mXXgjIZt8zGbp9L6aRygO5Nsrt6MY88NCdXs5R-2mA8t9qBCXeDMSOyAgvT5hXBAf6pemztweLvzSnh-yd9CZm6Z1dm03_PRQE0hM6BX8dVceaAqtUmNhU-xu25IVq7_2qftsCBKM1rdxNTC-2pKi60vNbmIxcXnTNPjg3QJUaW3kpBOpgLL0rqdEud3mkjWPWHaAQ1hLZBZusCBQ0bMTLFeE4" class="w-20 h-20 object-contain">
+<div>
+<h1 class="text-xl font-bold">CULTURED MEDICAL TRANSPORT LLC</h1>
+<p style="color:#C89B3C" class="italic">Safe. Dignified. Reliable.</p>
+</div>
+</div>
+<div class="hidden md:block text-right text-sm">
+<div>228-400-9452</div>
+<div>info@culturedmedicaltransport.com</div>
+<div>culturedmedicaltransport.com</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-16">
+<nav class="hidden md:block">
+<ul class="flex gap-8 text-sm font-semibold tracking-widest">
+<li><a href="#">HOME</a></li>
+<li><a href="#services">SERVICES</a></li>
+<li><a href="#fleet">FACILITIES</a></li>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="#contact">REQUEST A RIDE</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul>
+</nav>
+<a href="#contact" style="background:linear-gradient(135deg,#E0BC63,#C89B3C)" class="px-6 py-3 text-black font-bold">REQUEST TRANSPORTATION →</a>
+</div>
+</header>
+
+<main class="mt-40">
+<!-- Hero Section -->
+<section class="relative min-h-[70vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNgS5Mh_IDUrXIw6KEE-0Q5Nhk_4iCBrzAjo-BwBtUrMqeSoRduTHzLEZVJL69HL6fgDS14vVPAMshz_sFVwlXnIxRz7LH2NxmWW4olYXzaf-XTOSW-w8dKqjHKXXhFAStpGdH-yZbwJjKjxzTXF1C46Xy0yxBv__yPNmqCou2CKTL3DZD_UKkZbuXw-uUvJk0jsANtE51l08S-PM3WMAkBXQX9tDTOo2IatnhCy3cNYabhtGYiuL52nlirKGjapzopr-DM8FY0dk"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-7xl mx-auto flex flex-col items-start pt-12 pb-20">
+<div class="max-w-2xl">
+<h2 class="font-display-lg text-white mb-4">
+<span class="block text-secondary-fixed mb-2">Cultured Medical Transport</span>
+<span class="block text-4xl md:text-5xl font-extrabold leading-tight">Dependable Rides for Every Appointment on the Coast</span>
+</h2>
+<p class="text-white/90 font-body-lg text-body-lg mb-8 max-w-lg">
+                    Professional non-emergency medical transportation across the Gulf Coast. We prioritize safety, punctuality, and compassionate care for every patient.
+                </p>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-10 py-4 rounded-lg font-headline-md text-headline-md shadow-lg hover:bg-secondary-fixed-dim transition-transform hover:-translate-y-1">
+                    Request a Ride
+                </button>
+</div>
+</div>
+</section>
+<!-- New Video Section -->
+<section class="py-xl bg-primary text-on-primary">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-secondary-fixed mb-xs">See The Cultured Medical Transport Difference</h2>
+<p class="text-white/80">Watch our story and see why hospitals, facilities, and families trust us.</p>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto">
+<div class="relative aspect-video rounded-2xl overflow-hidden border-4 border-secondary shadow-2xl group cursor-pointer">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOlZtbpxmW9TnsqGh186NAdQ4-W5MNZhQ7wgMRXTteA0ksGRCa8mXXgjIZt8zGbp9L6aRygO5Nsrt6MY88NCdXs5R-2mA8t9qBCXeDMSOyAgvT5hXBAf6pemztweLvzSnh-yd9CZm6Z1dm03_PRQE0hM6BX8dVceaAqtUmNhU-xu25IVq7_2qftsCBKM1rdxNTC-2pKi60vNbmIxcXnTNPjg3QJUaW3kpBOpgLL0rqdEud3mkjWPWHaAQ1hLZBZusCBQ0bMTLFeE4"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-md bg-gradient-to-t from-black to-transparent flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">play_circle</span>
+<span class="font-label-lg">WATCH OUR COMMERCIAL</span>
+</div>
+<span class="font-label-sm">0:00 / 1:30</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-xl">
+<div class="md:w-1/2 order-2 md:order-1">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-md">Gulf Coast Professional Care</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-base leading-relaxed">
+                    At Cultured Medical Transport, we understand that medical appointments can be stressful. Our mission is to remove the burden of transportation, providing a seamless bridge between your home and healthcare providers.
+                </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Serving the entire Mississippi Gulf Coast, our team of trained professionals is dedicated to maintaining the highest standards of safety and comfort. From hospital discharges to routine check-ups, we treat every passenger like family.
+                </p>
+</div>
+<div class="md:w-1/2 order-1 md:order-2">
+<div class="rounded-2xl overflow-hidden shadow-xl aspect-[4/3] relative">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsAVmZJKsuSZGtvZRTS70yEmgkEE2VxeQDBVt7BFcXzwtDFVzj1V3ldHbcLY3_ovkWJMRN1WJHOyyS74FP7GhnmWmUy7puHCMFn0JilSjkWwyLHaYkDc0QIaCvnR8gRHxUmpZjnuT2HkcGzH6zsDkUf59iuF3plQBauwIIQZL_pLXa-XMPI8ggSgQ_LMDdxHymCOPR7JdfiH84vAYUoS6XTXspBoGMF8NxjXJHMqp7RQhE0Nb0lUAN9njIXNK4JxF05m8FKg4RLpY"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Transportation Services Grid -->
+<section class="py-xl bg-surface-container-low" id="services">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-xs">Transportation Services</h2>
+<div class="h-1 w-24 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div class="bg-surface p-lg rounded-xl tonal-elevation flex flex-col items-start gap-md">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">home_health</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Hospital Discharges</h4>
+<p class="text-on-surface-variant">Coordinated transport from medical facilities to the comfort of your home with door-to-door assistance.</p>
+</div>
+<div class="bg-surface p-lg rounded-xl tonal-elevation flex flex-col items-start gap-md">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">bloodtype</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Dialysis</h4>
+<p class="text-on-surface-variant">Reliable, scheduled recurring transport for dialysis treatments, ensuring you never miss a critical appointment.</p>
+</div>
+<div class="bg-surface p-lg rounded-xl tonal-elevation flex flex-col items-start gap-md">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">accessible</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Wheelchair Access</h4>
+<p class="text-on-surface-variant">Specially equipped vehicles with hydraulic lifts or ramps to accommodate all types of mobility devices safely.</p>
+</div>
+<div class="bg-surface p-lg rounded-xl tonal-elevation flex flex-col items-start gap-md">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">elderly</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Assisted Living</h4>
+<p class="text-on-surface-variant">Gentle transportation for seniors moving between residences, social activities, or medical visits.</p>
+</div>
+<div class="bg-surface p-lg rounded-xl tonal-elevation flex flex-col items-start gap-md">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">stethoscope</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Doctor Appointments</h4>
+<p class="text-on-surface-variant">Timely arrivals for outpatient procedures, specialist visits, and routine physical examinations.</p>
+</div>
+<div class="bg-surface p-lg rounded-xl tonal-elevation flex flex-col items-start gap-md">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">update</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">24/7 Coverage</h4>
+<p class="text-on-surface-variant">Around-the-clock availability for transport needs that don't follow a 9-to-5 schedule.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Your Neighborhood Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Your Neighborhood</h2>
+<p class="text-on-surface-variant font-body-lg text-body-lg">Proudly serving the Gulf Coast community with local expertise.</p>
+</div>
+<div class="flex items-center gap-sm text-secondary font-bold">
+<span>View all service areas</span>
+<span class="material-symbols-outlined">east</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden relative mb-base">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_diLmry6mKur9O-pX8OPMJ5HMhYr4PNdrvDZRcpgTkBKOTQfdj8QtPyl_sQFpI4PDA0z6cgfaWKUXG88DkU08PxvubaYcX4ArOn-1WKexhPtuZZnUrEMa6B27iCiNe081eN-45VKxVt1BrtdybUIzfKFZIAR7E7NKwVDqTa3HxEH2F4F1eDS4s8J11x81DugAe5hiYzwT9vLOBuair8RmpnWJ8lfi7e8tvIJ3ZIc_IOfVb-5618A2qGcDUh5Ht7v-_4g9wuqMkf4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+<span class="text-white font-headline-md text-headline-md">Biloxi</span>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden relative mb-base">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdeCmCAeqNQr7zTaDT19XoTmtjoD1XP5m4ndFlEXSvC6mhIRTLoZYsD5kONKbfEnekfTataj63ytzsH_Vnzdy--0JTQ5HYrg0P4gT4tYyy0CCjCSDuuJo_FL-U5qwL3FtEsROTRW_DSg11zYDsF82g1HbYQzm_wrQGJB8Lbs8mDOBZ_zDtIkkyWG5UzC2O4dOvUkv7tr9-q90_NgnDIRurJMRSbjUHC98frpKs7F3T9zdfk6X2Kdi36kz_y4qqUrThL0RDCw4eQb4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+<span class="text-white font-headline-md text-headline-md">Gulfport</span>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden relative mb-base">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARQw7bOom1I-nk-TIjoJZkRhnXIWFa74oXNZYRTjpF5LemXqJQWr7b3LfUzUDX3siHhwGAx8FLTaXbZ4EbThD5GaNpUg-DWBNMIHXsG0a0yVo6TKCZyt3VGjUav0p9b7FWibwsCPbrOcVq0wEv1BbdrXi_bTy3Zcnyglp5bkPaCelYmv0iXxK91VHM7SHIhGy6pWXRWSdH2g1GhAK9qHXndw5kPJmA5AKL2f3hG0qjq_ePj8XgaGljIPfU5m9YJeisF9qRIVYN_h4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+<span class="text-white font-headline-md text-headline-md">Pascagoula</span>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden relative mb-base">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPqJtAJq8dXylD_CemC07IQU7GfxUOw2-BE_f5oJusVf_b9N8TVXysqlHscfDT4C6fv5W5bbDINjVVCrhV4ivIhjrod3oBHuTnY1d5CktZhMknF2996c3kBQ_gvdhpCTSkp0l1_vnYgU5x7kbUU19pRCoTZt3LjGFh9qW4-IjHNzPf5pMbOlF-wFMPcpe9PRNcxfp3m_Ih3GDNvAXS4GLjlkGVE18nIrW1fL3PQj4bvH1mzis1kmX1mHvW5qaSJCwxzeNFhHwufxg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-md">
+<span class="text-white font-headline-md text-headline-md">Ocean Springs</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Fleet Section -->
+<section class="py-xl bg-primary text-on-primary overflow-hidden" id="fleet">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-xl">
+<div class="md:w-1/2">
+<div class="inline-block px-4 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full font-label-sm text-label-sm mb-md">OUR FLEET</div>
+<h2 class="font-display-lg text-display-lg mb-md leading-tight">Comfort Meets Capability</h2>
+<p class="font-body-lg text-body-lg text-white/80 mb-lg">
+                        Our vehicles are more than just vans; they are mobile care units designed for maximum comfort and safety. Each vehicle in our fleet undergoes rigorous daily inspections and sanitation protocols.
+                    </p>
+<div class="space-y-sm">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-headline-md text-headline-md">Hydraulic Wheelchair Lifts</span>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-headline-md text-headline-md">Climate Controlled Interiors</span>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-headline-md text-headline-md">GPS Tracking &amp; Dispatch</span>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-headline-md text-headline-md">ADA Compliant Configurations</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<img class="relative z-10 w-full rounded-2xl shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1WWULRG-dMvX20MTBjM1WEgV1a1XzMU9vQrdtSwnrCQ5QVnRtsz3ZV6I_yHEa3H0KkxG-C2bH2nCTefXWZdFfkGkmcB9RF8TajJqOlz7PZ84N4KaxHl2sq3fm3rkXe2ZWTmlgqNBbIQCKri2M84TB3cBHGRsWzbBs-r33vU5C3zINYDZ2quCsO2KYXQmBcscBrEickbHm_5Cjx5yJIK-tw1KrRswlshaXKZVwsTWXx9AKc-sUbtIJcctbDYfBTXU4Ahvv3feX49w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Schedule Your Ride Form -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto" id="contact">
+<div class="bg-surface border border-outline-variant rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+<div class="md:w-2/5 bg-surface-container-highest p-lg md:p-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Schedule Your Ride</h2>
+<p class="text-on-surface-variant mb-lg">Fill out the form below, and our dispatch team will contact you within 15 minutes to confirm your transport details.</p>
+<div class="space-y-lg">
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary mt-1">call</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary uppercase">Immediate Assistance</div>
+<div class="text-headline-md font-headline-md">(228) 555-0123</div>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary mt-1">mail</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary uppercase">Email Inquiry</div>
+<div class="text-headline-md font-headline-md">dispatch@culturedmedical.com</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-3/5 p-lg md:p-xl">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="md:col-span-1">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs">PATIENT NAME</label>
+<input class="w-full bg-surface-container-low border border-outline rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" type="text"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs">CONTACT NUMBER</label>
+<input class="w-full bg-surface-container-low border border-outline rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" type="tel"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs">PICKUP LOCATION</label>
+<input class="w-full bg-surface-container-low border border-outline rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="Street Address" type="text"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs">DESTINATION</label>
+<input class="w-full bg-surface-container-low border border-outline rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="Hospital or Clinic" type="text"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs">DATE OF TRANSPORT</label>
+<input class="w-full bg-surface-container-low border border-outline rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" type="date"/>
+</div>
+<div class="md:col-span-1">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs">TRANSPORT TYPE</label>
+<select class="w-full bg-surface-container-low border border-outline rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all">
+<option>Ambulatory (Walking)</option>
+<option>Wheelchair</option>
+<option>Stretcher</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-xs">ADDITIONAL NOTES</label>
+<textarea class="w-full bg-surface-container-low border border-outline rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-headline-md text-headline-md hover:bg-secondary transition-all active:scale-95 shadow-md" type="submit">
+                            Confirm Transport Request
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full border-t-4 border-secondary bg-primary text-on-primary grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-xl">
+<div class="space-y-md">
+<h5 class="font-headline-md text-headline-md text-secondary-fixed">CULTURED MEDICAL</h5>
+<p class="font-body-md text-body-md text-on-primary/80">Leading non-emergency medical transport on the Mississippi Gulf Coast. Professionalism, precision, and personal care in every mile.</p>
+<div class="flex gap-md">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-fixed-dim hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-fixed-dim hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="font-label-lg text-label-lg text-white uppercase mb-lg tracking-widest">Navigation</h6>
+<ul class="space-y-base">
+<li><a class="text-on-primary/80 hover:text-secondary-fixed-dim transition-colors" href="#">Services</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-fixed-dim transition-colors" href="#">Fleet</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-fixed-dim transition-colors" href="#">About Us</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-fixed-dim transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-fixed-dim transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-md">
+<h6 class="font-label-lg text-label-lg text-white uppercase mb-lg tracking-widest">Contact Info</h6>
+<div class="flex items-center gap-md text-on-primary/80">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+<span>123 Coastal Pkwy, Gulfport, MS 39501</span>
+</div>
+<div class="flex items-center gap-md text-on-primary/80">
+<span class="material-symbols-outlined text-secondary-fixed">phone</span>
+<span>(228) 555-0123</span>
+</div>
+<div class="flex items-center gap-md text-on-primary/80">
+<span class="material-symbols-outlined text-secondary-fixed">schedule</span>
+<span>Dispatch: 24/7 Availability</span>
+</div>
+<p class="pt-lg text-on-primary/60 text-sm">
+            © 2024 Cultured Medical Transport. Gulf Coast Professional Care.
+        </p>
+</div>
+</footer>
+<nav class="fixed bottom-0 w-full z-50 md:hidden flex justify-around items-center h-16 w-full pb-safe border-t border-outline-variant bg-surface shadow-lg">
+<a class="flex flex-col items-center justify-center text-secondary bg-secondary-container/20 rounded-xl px-3 py-1" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-90" href="#services">
+<span class="material-symbols-outlined">ambulance</span>
+<span class="font-label-sm text-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-90" href="#fleet">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="font-label-sm text-label-sm">Fleet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-90" href="#contact">
+<span class="material-symbols-outlined">contact_support</span>
+<span class="font-label-sm text-label-sm">Contact</span>
+</a>
+</nav>
+<script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        if (!section.classList.contains('relative')) {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        }
+    });
+</script>
+</body></html>
