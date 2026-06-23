@@ -154,14 +154,17 @@
     <!-- Interactive Video Container -->
     <div id="videoContainer" class="relative aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl group cursor-pointer bg-black">
       
-      <!-- Actual Video Element (Controls hidden so overlay works perfectly) -->
-      <video id="commercialVideo" class="w-full h-full object-cover opacity-60 transition-all duration-500">
+      <!-- Added 'poster' attribute with your thumbnail path and removed opacity-60 -->
+      <video 
+        id="commercialVideo" 
+        poster="your-thumbnail-image.jpg" 
+        class="w-full h-full object-cover transition-all duration-500">
         <source src="cultured-commercial.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
       <!-- Paused/Thumbnail Overlay UI -->
-      <div id="videoOverlay" class="absolute inset-0 flex flex-col justify-between p-8 bg-gradient-to-t from-black via-black/40 to-transparent transition-opacity duration-300 pointer-events-none">
+      <div id="videoOverlay" class="absolute inset-0 flex flex-col justify-between p-8 bg-gradient-to-t from-black via-black/20 to-transparent transition-opacity duration-300 pointer-events-none">
         
         <!-- Center Play Button -->
         <div class="flex-1 flex items-center justify-center">
@@ -183,6 +186,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Intro Section -->
 <section class="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto transition-all duration-1000 opacity-100 translate-y-0">
@@ -521,12 +525,10 @@
   videoContainer.addEventListener('click', () => {
     if (video.paused) {
       video.play();
-      video.classList.remove('opacity-60'); // Brighten the video up completely when playing
       overlay.classList.add('opacity-0');   // Hide the text overlays and play button
       video.controls = true;                 // Enable default video scrub bar controls while playing
     } else {
       video.pause();
-      video.classList.add('opacity-60');    // Dim video back to thumbnail style
       overlay.classList.remove('opacity-0'); // Bring back the custom text overlay
       video.controls = false;                // Hide default bars to prioritize custom UI
     }
@@ -534,7 +536,6 @@
 
   // Native behavior fallback if user pauses via browser menu controls instead of clicking the box
   video.addEventListener('pause', () => {
-    video.classList.add('opacity-60');
     overlay.classList.remove('opacity-0');
     video.controls = false;
   });
