@@ -149,17 +149,37 @@
     <h2 class="text-3xl md:text-5xl font-black text-gold mb-6">See The Difference</h2>
     <p class="text-white/60 max-w-2xl mx-auto text-lg">Watch our story and see why hospitals, facilities, and families trust Cultured Medical for their transportation needs.</p>
   </div>
+  
   <div class="px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto">
-    <div class="relative aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black">
-      <!-- Changed <img> to <video> and added controls -->
-      <video 
-        controls 
-        preload="metadata"
-        class="w-full h-full object-cover" 
-        poster="your-thumbnail-image.jpg">
+    <!-- Interactive Video Container -->
+    <div id="videoContainer" class="relative aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl group cursor-pointer bg-black">
+      
+      <!-- Actual Video Element (Controls hidden so overlay works perfectly) -->
+      <video id="commercialVideo" class="w-full h-full object-cover opacity-60 transition-all duration-500">
         <source src="cultured-commercial.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+
+      <!-- Paused/Thumbnail Overlay UI -->
+      <div id="videoOverlay" class="absolute inset-0 flex flex-col justify-between p-8 bg-gradient-to-t from-black via-black/40 to-transparent transition-opacity duration-300 pointer-events-none">
+        
+        <!-- Center Play Button -->
+        <div class="flex-1 flex items-center justify-center">
+          <div class="w-24 h-24 bg-gold rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(200,155,60,0.5)] group-hover:scale-110 transition-all duration-500">
+            <span class="material-symbols-outlined text-black text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          </div>
+        </div>
+
+        <!-- Bottom Text Bar Overlay -->
+        <div class="flex items-center justify-between w-full">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-gold">play_circle</span>
+            <span class="font-bold tracking-widest text-sm">WATCH OUR COMMERCIAL</span>
+          </div>
+          <span class="text-xs font-medium text-white/50 tracking-widest">CLICK TO PLAY</span>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
@@ -491,6 +511,34 @@
             }
         });
     </script>
+
+<!-- JavaScript to control Play/Pause and toggle the UI overlay -->
+<script>
+  const videoContainer = document.getElementById('videoContainer');
+  const video = document.getElementById('commercialVideo');
+  const overlay = document.getElementById('videoOverlay');
+
+  videoContainer.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      video.classList.remove('opacity-60'); // Brighten the video up completely when playing
+      overlay.classList.add('opacity-0');   // Hide the text overlays and play button
+      video.controls = true;                 // Enable default video scrub bar controls while playing
+    } else {
+      video.pause();
+      video.classList.add('opacity-60');    // Dim video back to thumbnail style
+      overlay.classList.remove('opacity-0'); // Bring back the custom text overlay
+      video.controls = false;                // Hide default bars to prioritize custom UI
+    }
+  });
+
+  // Native behavior fallback if user pauses via browser menu controls instead of clicking the box
+  video.addEventListener('pause', () => {
+    video.classList.add('opacity-60');
+    overlay.classList.remove('opacity-0');
+    video.controls = false;
+  });
+</script>
 
 
 </body></html>
