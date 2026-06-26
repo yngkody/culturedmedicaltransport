@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Cultured Medical Transport</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#edeeef",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#410003",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffe088",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-primary-container": "#848484",
+                    "primary-container": "#1b1b1b",
+                    "on-background": "#191c1d",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed": "#e2e2e2",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e7e8e9",
+                    "inverse-on-surface": "#f0f1f2",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#c6c6c6",
+                    "surface-tint": "#5e5e5e",
+                    "surface": "#f8f9fa",
+                    "surface-bright": "#f8f9fa",
+                    "primary": "#000000",
+                    "tertiary": "#000000",
+                    "surface-variant": "#e1e3e4",
+                    "tertiary-fixed-dim": "#ffb4ac",
+                    "secondary": "#735c00",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "on-surface-variant": "#4c4546",
+                    "outline-variant": "#cfc4c5",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-container": "#ea4b44",
+                    "on-surface": "#191c1d",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#474747",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-error-container": "#93000a",
+                    "outline": "#7e7576",
+                    "secondary-container": "#fed65b",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-fixed": "#410003",
+                    "on-secondary-fixed-variant": "#574500",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#92030f",
+                    "on-primary-fixed": "#1b1b1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "margin-desktop": "64px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "base": "8px",
+                    "sm": "12px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(233, 236, 239, 1);
+        }
+        .gold-gradient-border {
+            border-left: 4px solid #735c00;
+        }
+        .hero-mesh {
+            background-color: #f8f9fa;
+            background-image: radial-gradient(at 0% 0%, rgba(255, 224, 136, 0.15) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(0, 0, 0, 0.05) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar Navigation -->
+<nav class="fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile md:px-margin-desktop h-20 bg-surface/90 backdrop-blur-md border-b border-outline-variant shadow-sm">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-3xl">medical_services</span>
+<span class="font-display-lg text-[24px] tracking-tight text-primary leading-none">CULTURED MEDICAL</span>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-lg" href="#">Home</a>
+<a class="text-secondary font-bold font-label-lg" href="#">About Us</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-lg" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-lg" href="#">Fleet</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-lg active:scale-95 transition-transform">BOOK NOW</button>
+</div>
+<button class="md:hidden p-2">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</button>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Our Story -->
+<section class="relative overflow-hidden hero-mesh py-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="z-10">
+<div class="inline-flex items-center gap-xs px-3 py-1 bg-secondary-container text-on-secondary-fixed-variant rounded-full mb-6">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+<span class="font-label-sm uppercase tracking-wider">A Decade of Dedicated Care</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Our Story</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Cultured Medical Transport was born from a profound personal journey. For over ten years, our founder personally managed the complex medical transportation needs of a close family member. This lived experience exposed the critical gaps in the industry: the need for punctuality, empathy, and absolute patient dignity.
+                    </p>
+<div class="flex flex-col gap-md border-l-4 border-secondary pl-6 italic text-on-surface-variant font-body-md">
+                        "We don't just transport patients; we serve neighbors with the same meticulous care we provided our own family for a decade."
+                    </div>
+</div>
+<div class="relative">
+<div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A professional, compassionate scene in a modern medical office setting with warm sunlight streaming through large windows. A clean-cut medical transport professional in a crisp black uniform is seen conversing kindly with an elderly patient in a wheelchair. The atmosphere is quiet, respectful, and high-end, utilizing a palette of deep blacks, soft whites, and elegant gold accents to emphasize the premium care and professional reliability of the service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRNR3wy9tCyhUM2XimbEwvqrb3Rhlmf6KfpUrMn19QgpLgqhC2rANCzo_SScjMDOCk9G1zY6Dr4Qj44860_3oRzXlpo6gLpOg5vDysvkAJoZKfOnztAtR0dyjOHAyYODgAVJJL2A4WTMWp612w-eisPPtyxL_4HrMuHSqad3HLbKsN2UbcZyJyS7Wb7rottMbm8PGyfJkLDWnUlANaNy3ttMvDR7HVxlkJpCL0aULGo9knHznqMdMQqqyn6cNLdpftZ4N1RGOZ7x8"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary text-on-primary p-8 rounded-xl shadow-xl hidden md:block">
+<p class="text-display-lg font-display-lg leading-none">10+</p>
+<p class="font-label-lg uppercase tracking-widest text-secondary-fixed">Years Experience</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Fleet Section: Emphasis -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">The Modern Hybrid Fleet</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Precision engineering meets compassionate care. Our fleet is designed for the smoothest, quietest, and most reliable ride in the medical transport industry.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 rounded-2xl overflow-hidden shadow-xl border border-outline-variant">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBS8FeaFWuLaPSg0ag-9iy0qk97kyjOJ-0bXOnUD-Roz21r5R4FkamkoM7sbICq1MxuvaGg1_IiP2frGhkf_EIxj45DPXHY3URf-WhzgYQWk_1rIwv8pwvPWNxtO5hKkO7e4ShEc2sfAyJUTnSuwuX3MuFtNB4ffGMyq3e04oN4tS9-LaHmxdhVfyOQFN3IC5cTGe-wUiqAldrvsNE5E4PtJyYoM7WkRxz1B0EBO0TWE9mWkLd-Bzapp01GmCRkerIL_ZZevApTq0"/>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-md">
+<div class="glass-card p-6 rounded-xl gold-gradient-border shadow-sm">
+<div class="flex items-center gap-sm mb-3">
+<span class="material-symbols-outlined text-secondary">eco</span>
+<h3 class="font-headline-md text-headline-md">Toyota Sienna Hybrids</h3>
+</div>
+<p class="font-body-md text-on-surface-variant">Specifically selected for their near-silent operation and smooth suspension, ensuring a stress-free environment for sensitive patients.</p>
+</div>
+<div class="glass-card p-6 rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<div class="flex items-center gap-sm mb-3">
+<span class="material-symbols-outlined text-primary">accessible</span>
+<h3 class="font-headline-md text-headline-md">Advanced Accessibility</h3>
+</div>
+<p class="font-body-md text-on-surface-variant">Low-floor entry and high-load capacity ramps designed for ease of use and maximum safety for all wheelchair types.</p>
+</div>
+<div class="glass-card p-6 rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<div class="flex items-center gap-sm mb-3">
+<span class="material-symbols-outlined text-primary">verified</span>
+<h3 class="font-headline-md text-headline-md">Pristine Reliability</h3>
+</div>
+<p class="font-body-md text-on-surface-variant">Routine daily sanitization and mathematical maintenance schedules to ensure zero downtime for your critical appointments.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Payment & Reliability Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Reliable Volume, Seamless Logistics</h2>
+<p class="font-body-lg text-primary-fixed-dim mb-10">We specialize in high-frequency transport logistics, partnering with regional facilities to provide structured, predictable movement of patients without administrative overhead.</p>
+<div class="grid grid-cols-2 gap-md">
+<div class="bg-primary-container p-6 rounded-xl border border-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl mb-4">payments</span>
+<h4 class="font-headline-md text-on-primary mb-2">Private Pay</h4>
+<p class="text-on-primary-container font-label-sm">Simplified invoicing and direct payment options.</p>
+</div>
+<div class="bg-primary-container p-6 rounded-xl border border-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl mb-4">account_balance</span>
+<h4 class="font-headline-md text-on-primary mb-2">Medicaid</h4>
+<p class="text-on-primary-container font-label-sm">Approved provider with streamlined billing.</p>
+</div>
+<div class="bg-primary-container p-6 rounded-xl border border-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl mb-4">description</span>
+<h4 class="font-headline-md text-on-primary mb-2">Insurance</h4>
+<p class="text-on-primary-container font-label-sm">Direct coordination with major carriers.</p>
+</div>
+<div class="bg-primary-container p-6 rounded-xl border border-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl mb-4">handshake</span>
+<h4 class="font-headline-md text-on-primary mb-2">Brokers</h4>
+<p class="text-on-primary-container font-label-sm">Strategic partnerships for large-scale logistics.</p>
+</div>
+</div>
+</div>
+<div class="relative flex justify-center">
+<div class="w-full h-[500px] rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro, professional photo focusing on the detailed texture of a premium black leather car seat with subtle gold stitching. In the background, a blurred modern medical facility glass exterior is visible during a bright daytime setting. The lighting is sophisticated, creating elegant highlights on the clean surfaces, evoking a sense of corporate professionalism, cleanliness, and absolute reliability for high-end medical transport." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJNxYbXRqBnFBcf9emddxJvVbNLb2aXPZmpN96603ZJm1G5xZUg6bFfpvzspfGhLBpKNFBOasSfikxMhjEerfHkFAoBVub6CGCUsLw7j9R8qVy9WYc7NNVjT-tHaMIpolG6yTm3Oqg-hsyO1Tb74rhBJoc8Bo4REEF4fLBo9olXNt9kQiH_A1G6IVy-v4IS7U52L2fXLqqHcU5R4lEhzahoPBPb4FB4WKx0vZmXa248f-EuOdV4SCDNJsJCH4H97ol_rNjY7VAt5s"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-10 left-10 right-10">
+<div class="bg-surface p-6 rounded-xl shadow-2xl">
+<div class="flex items-center gap-sm mb-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-md text-primary">Preferred Facility Partner</span>
+</div>
+<p class="text-on-surface-variant font-body-md italic">"Their billing transparency and fleet reliability make them the first call for our discharge planning team."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dialysis-Focused Care -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-4xl mx-auto text-center">
+<div class="inline-flex items-center justify-center w-16 h-16 bg-error-container text-on-error-container rounded-full mb-6">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Compassionate Dialysis Support</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed mb-8">
+                    We understand that dialysis isn't just an appointment; it's a lifeline. Having personally managed dialysis schedules for a decade, our leadership knows the physical and emotional toll these visits can take. We prioritize prompt pickups, climate-controlled comfort, and a gentle ride to ensure you return home as comfortably as possible.
+                </p>
+<div class="flex flex-wrap justify-center gap-gutter">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<span class="font-label-lg">Zero-Late Protocol</span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary">thermostat</span>
+<span class="font-label-lg">Climate Optimized</span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary">support_agent</span>
+<span class="font-label-lg">Direct Communication</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Facilities Choose Us -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-md">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Why Facilities Choose Us</h2>
+<p class="font-body-md text-on-surface-variant mt-4">The Cultured standard of professional medical transportation.</p>
+</div>
+<div class="flex gap-sm">
+<div class="text-right">
+<p class="font-display-lg text-primary leading-none">250+</p>
+<p class="font-label-sm text-on-surface-variant uppercase">Documented Trips</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border-b-4 border-secondary shadow-sm hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">military_tech</span>
+<h3 class="font-headline-md text-primary mb-3">Veteran-Led</h3>
+<p class="font-body-md text-on-surface-variant">Disciplined operations and mission-critical precision at every level of our leadership.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border-b-4 border-secondary shadow-sm hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">badge</span>
+<h3 class="font-headline-md text-primary mb-3">Professional Uniforms</h3>
+<p class="font-body-md text-on-surface-variant">Our drivers maintain a clinical appearance to blend seamlessly with facility professional environments.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border-b-4 border-secondary shadow-sm hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">verified_user</span>
+<h3 class="font-headline-md text-primary mb-3">Safety Protocol</h3>
+<p class="font-body-md text-on-surface-variant">Strict 4-point wheelchair securement and bedside-to-bedside accompaniment standards.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border-b-4 border-secondary shadow-sm hover:translate-y-[-4px] transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">record_voice_over</span>
+<h3 class="font-headline-md text-primary mb-3">Patient Advocacy</h3>
+<p class="font-body-md text-on-surface-variant">Trained to recognize and communicate patient needs during transit to facility staff.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-5xl mx-auto bg-primary rounded-[2rem] overflow-hidden relative shadow-2xl">
+
+<div class="relative z-10 px-8 py-16 md:px-16 md:py-24 text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6">Ready for a Better Experience?</h2>
+<p class="font-body-lg text-primary-fixed-dim max-w-2xl mx-auto mb-10">Experience medical transport as it should be—professional, punctual, and profoundly dignified.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-md">
+<button class="bg-secondary-container text-on-secondary-fixed py-4 px-10 rounded-xl font-label-lg active:scale-95 transition-all shadow-lg hover:shadow-secondary-container/20">PARTNER WITH US</button>
+<button class="border border-on-primary text-on-primary py-4 px-10 rounded-xl font-label-lg active:scale-95 transition-all hover:bg-on-primary/10">VIEW FLEET</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t-4 border-secondary bg-primary py-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div>
+<h3 class="font-headline-md text-secondary-fixed mb-6">CULTURED MEDICAL</h3>
+<p class="text-on-primary/80 font-body-md mb-8">Professional non-emergency medical transport dedicated to patient dignity and facility reliability.</p>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-on-primary/60 cursor-pointer hover:text-secondary-fixed">face_nod</span>
+<span class="material-symbols-outlined text-on-primary/60 cursor-pointer hover:text-secondary-fixed">share_location</span>
+</div>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-lg text-on-primary uppercase tracking-widest mb-2">Services</h4>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-md" href="#">Wheelchair Transport</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-md" href="#">Ambulatory Rides</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-md" href="#">Dialysis Coordination</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-md" href="#">Facility Partnerships</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-lg text-on-primary uppercase tracking-widest mb-2">Company</h4>
+<a class="text-secondary-fixed underline font-body-md" href="#">About Us</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-md" href="#">Fleet Details</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-md" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-on-primary/10 text-center">
+<p class="text-on-primary/60 font-label-sm">© 2024 Cultured Medical Transport. Gulf Coast Professional Care.</p>
+</div>
+</footer>
+<!-- Mobile Bottom NavBar -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden flex justify-around items-center h-16 pb-safe bg-surface border-t border-outline-variant shadow-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-label-sm" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-label-sm" href="#">
+<span class="material-symbols-outlined">medical_services</span>
+<span>Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary bg-secondary-container/20 rounded-xl px-3 py-1 font-label-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">info</span>
+<span>About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-label-sm" href="#">
+<span class="material-symbols-outlined">contact_support</span>
+<span>Contact</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('</script></body></html>
