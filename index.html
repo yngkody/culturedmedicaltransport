@@ -115,7 +115,9 @@
 </header>
 <main class="md:pt-0 pt-16">
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center overflow-hidden">
+<!-- Hero Section -->
+<!-- CHANGED: Replaced items-center with max-md:items-start so mobile starts at the top -->
+<section class="relative min-h-screen flex items-center max-md:items-start overflow-hidden">
   <!-- Optimized Background Container -->
   <div class="absolute inset-0 z-0"> 
     <picture>
@@ -127,8 +129,11 @@
     </picture>
   </div>
 
-  <div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-7xl mx-auto flex flex-col items-start pt-24 pb-20" style="filter: drop-shadow(rgba(0, 0, 0, 0.8) 0px 4px 6px);">
-    <div class="max-w-3xl">
+  <!-- CHANGED: Added pt-20 for mobile spacing under header, and max-md:justify-end to pull content right -->
+  <div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-7xl mx-auto flex max-md:justify-end pt-20 md:pt-24 pb-20" style="filter: drop-shadow(rgba(0, 0, 0, 0.8) 0px 4px 6px);">
+    
+    <!-- CHANGED: Added max-md:items-end, max-md:text-right, and max-md:ml-auto to align content top-right on mobile -->
+    <div class="max-w-3xl flex flex-col items-start max-md:items-end text-left max-md:text-right max-md:ml-auto">
       <p class="text-gold font-bold tracking-[0.3em] uppercase mb-4 text-sm">Cultured Medical Transport</p>
       <h2 class="text-3xl md:text-5xl font-sans font-bold text-white leading-tight mb-8">
         Dependable Rides for Every Appointment <span class="text-gold">on the Coast</span>
@@ -137,7 +142,9 @@
       <p class="text-white/80 text-lg md:text-xl font-medium mb-12 max-w-xl leading-relaxed">
         Professional non-emergency medical transportation across the Gulf Coast. We prioritize safety, punctuality, and compassionate care for every patient.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4">
+      
+      <!-- CHANGED: Added max-md:justify-end so buttons also align nicely to the right on mobile layouts -->
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-start max-md:justify-end">
         <a class="bg-gold text-black px-12 py-5 rounded-lg font-bold text-lg shadow-2xl hover:bg-gold/90 transition-all text-center flex items-center justify-center gap-2 group" href="#contact">
           Book Your Ride
           <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
@@ -148,7 +155,7 @@
       </div>
     </div>
   </div>
-</section> 
+</section>
 
 
 <!-- Video Section -->
