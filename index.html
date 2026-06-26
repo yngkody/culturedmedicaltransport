@@ -99,20 +99,31 @@
                 </a>
 </nav>
 </div>
-</header>
 <!-- Mobile Header -->
 <header class="fixed top-0 w-full z-50 bg-black text-white px-margin-mobile py-3 border-b border-white/10 md:hidden flex items-center justify-between">
-<div class="flex items-center gap-2">
-<img alt="Cultured Logo" class="w-10 h-10 object-contain" src="culltured-logo-adjusted.png">
-<div class="flex flex-col">
-<h1 class="text-[12px] font-black tracking-tight leading-none">CULTURED MEDICAL</h1>
-<p class="text-gold text-[9px] font-bold">PROFESSIONAL CARE</p>
-</div>
-</div>
-<a class="bg-gold text-black px-4 py-2 rounded text-[10px] font-black uppercase tracking-wider shadow-md" href="#contact">
-            Request
-        </a>
+  <!-- Left Side: Logo & Branding -->
+  <div class="flex items-center gap-2">
+    <img alt="Cultured Logo" class="w-10 h-10 object-contain" src="culltured-logo-adjusted.png">
+    <div class="flex flex-col">
+      <h1 class="text-[12px] font-black tracking-tight leading-none">CULTURED MEDICAL</h1>
+      <p class="text-gold text-[9px] font-bold">PROFESSIONAL CARE</p>
+    </div>
+  </div>
+  
+  <!-- CHANGED: Right Side items grouped into a row flexbox container -->
+  <div class="flex items-center gap-4">
+    <!-- ADDED: Compact About Us Link for Mobile Screens -->
+    <a class="text-[10px] font-black uppercase tracking-wider text-white/80 hover:text-gold transition-colors" href="#about">
+      About
+    </a>
+    
+    <!-- Existing Action Button -->
+    <a class="bg-gold text-black px-4 py-2 rounded text-[10px] font-black uppercase tracking-wider shadow-md" href="#contact">
+      Request
+    </a>
+  </div>
 </header>
+
 <main class="md:pt-0 pt-16">
 <!-- Hero Section -->
 <!-- Hero Section -->
