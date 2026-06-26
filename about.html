@@ -123,6 +123,7 @@
         }
     </style>
       <!-- Updated Desktop Header with Larger Logo -->
+<!-- Desktop Header (Shows only on medium screens and larger) -->
 <header class="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-md text-white border-b border-white/10 hidden md:block">
   <div class="max-w-7xl mx-auto px-margin-desktop h-20 flex items-center justify-between">
     <a class="flex items-center gap-3" href="#">
@@ -134,7 +135,7 @@
     </a>
 
     <nav class="flex items-center gap-8">
-      <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="index.html">Home</a>
+      <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#">Home</a>
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#services">Services</a>
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#fleet">Fleet</a>
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="about.html">About Us</a>
@@ -143,9 +144,10 @@
         Request Transportation
       </a>
     </nav>
-  </div> <!-- FIXED: Added missing closing div for max-w-7xl wrapper -->
-</header> <!-- FIXED: Added missing closing header for Desktop Viewports -->
-<!-- Mobile Header -->
+  </div> 
+</header> 
+
+<!-- Mobile Header (Shows on mobile and small layouts) -->
 <header class="fixed top-0 w-full z-50 bg-black text-white px-margin-mobile py-3 border-b border-white/10 md:hidden flex items-center justify-between">
   <!-- Left Side: Logo & Branding -->
   <div class="flex items-center gap-2">
@@ -158,17 +160,17 @@
   
   <!-- Right Side items grouped into a row flexbox container -->
   <div class="flex items-center gap-4">
-    <!-- Cleaned up link with correct font sizing for mobile alignment -->
     <a class="text-[10px] font-black uppercase tracking-wider text-white/80 hover:text-gold transition-colors" href="about.html">
       About Us
     </a>
     
-    <!-- Existing Action Button for Mobile Screens -->
-    <a class="bg-gold text-black px-4 py-2 rounded text-[10px] font-black uppercase tracking-wider shadow-md" href="#contact">
-      Request
+    <!-- CHANGED: Replaced the small mobile button with your exact desktop style button -->
+    <a class="bg-gold text-black px-4 py-2.5 rounded text-[10px] font-extrabold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg active:scale-95 whitespace-nowrap" href="#contact">
+      Request Transportation
     </a>
   </div>
 </header>
+
 
 <main class="pt-20">
 <!-- Hero Section: Our Story -->
