@@ -123,10 +123,11 @@
         }
     </style>
       <!-- Updated Desktop Header with Larger Logo -->
-<!-- Desktop Header (Shows only on medium screens and larger) -->
+<!-- Desktop Header (Visible on screens 768px and wider) -->
 <header class="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-md text-white border-b border-white/10 hidden md:block">
   <div class="max-w-7xl mx-auto px-margin-desktop h-20 flex items-center justify-between">
-    <a class="flex items-center gap-3" href="#">
+    <!-- Left Side Logo Brand -->
+    <a class="flex items-center gap-3 shrink-0" href="#">
       <img alt="Cultured Logo" class="w-12 h-12 object-contain" src="culltured-logo-adjusted.png">
       <div class="flex flex-col">
         <span class="text-sm font-bold tracking-widest leading-none">CULTURED MEDICAL TRANSPORT</span>
@@ -134,42 +135,42 @@
       </div>
     </a>
 
-    <nav class="flex items-center gap-8">
+    <!-- Right Side Navigation Links and Button -->
+    <nav class="flex items-center gap-6 lg:gap-8">
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#">Home</a>
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#services">Services</a>
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#fleet">Fleet</a>
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="about.html">About Us</a>
       <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors text-gold" href="#contact">Request A Ride</a>
-      <a class="bg-gold text-black px-6 py-3 rounded text-[11px] font-extrabold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg active:scale-95" href="#contact">
+      <a class="bg-gold text-black px-5 py-3 rounded text-[11px] font-extrabold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg active:scale-95 shrink-0" href="#contact">
         Request Transportation
       </a>
     </nav>
   </div> 
-</header> 
+</header>
 
-<!-- Mobile Header (Shows on mobile and small layouts) -->
-<header class="fixed top-0 w-full z-50 bg-black text-white px-margin-mobile py-3 border-b border-white/10 md:hidden flex items-center justify-between">
-  <!-- Left Side: Logo & Branding -->
-  <div class="flex items-center gap-2">
-    <img alt="Cultured Logo" class="w-10 h-10 object-contain" src="culltured-logo-adjusted.png">
+<!-- Mobile Header (Visible only on screens smaller than 768px) -->
+<header class="fixed top-0 w-full z-50 bg-black text-white px-4 py-3 border-b border-white/10 md:hidden flex items-center justify-between">
+  <!-- Left Side Logo -->
+  <div class="flex items-center gap-2 shrink-0">
+    <img alt="Cultured Logo" class="w-9 h-9 object-contain" src="culltured-logo-adjusted.png">
     <div class="flex flex-col">
-      <h1 class="text-[12px] font-black tracking-tight leading-none">CULTURED MEDICAL</h1>
-      <p class="text-gold text-[9px] font-bold">PROFESSIONAL CARE</p>
+      <h1 class="text-[11px] font-black tracking-tight leading-none">CULTURED MEDICAL</h1>
+      <p class="text-gold text-[8px] font-bold">PROFESSIONAL CARE</p>
     </div>
   </div>
   
-  <!-- Right Side items grouped into a row flexbox container -->
-  <div class="flex items-center gap-4">
-    <a class="text-[10px] font-black uppercase tracking-wider text-white/80 hover:text-gold transition-colors" href="about.html">
+  <!-- Right Side Elements -->
+  <div class="flex items-center gap-3 shrink-0">
+    <a class="text-[11px] font-bold uppercase tracking-wider text-white/80 hover:text-gold transition-colors" href="about.html">
       About Us
     </a>
-    
-    <!-- CHANGED: Replaced the small mobile button with your exact desktop style button -->
-    <a class="bg-gold text-black px-4 py-2.5 rounded text-[10px] font-extrabold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg active:scale-95 whitespace-nowrap" href="#contact">
-      Request Transportation
+    <a class="bg-gold text-black px-3 py-2 rounded text-[11px] font-black uppercase tracking-wider shadow-md text-center" href="#contact">
+      Request
     </a>
   </div>
 </header>
+
 
 
 <main class="pt-20">
