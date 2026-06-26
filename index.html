@@ -116,7 +116,7 @@
 <main class="md:pt-0 pt-16">
 <!-- Hero Section -->
 <!-- Hero Section -->
-<!-- CHANGED: Added max-md:min-h-[140vh] to make the section taller on mobile for the van graphic -->
+<!-- CHANGED: Keeps the taller 140vh height on mobile so the section has room to stretch -->
 <section class="relative min-h-screen max-md:min-h-[140vh] flex items-center max-md:items-start overflow-hidden">
   <!-- Optimized Background Container -->
   <div class="absolute inset-0 z-0"> 
@@ -125,21 +125,23 @@
       <source media="(min-width: 768px)" srcset="cultured-hero-3.png">
       
       <!-- Mobile Fallback Image: Loaded by default on screens smaller than 768px -->
-      <img alt="Hero Background" class="w-full h-full object-cover object-center" src="cultured-mobile.png">
+      <img alt="Hero Background" class="w-full h-full object-cover object-center" src="cultured-hero-mobile.png">
     </picture>
   </div>
 
-  <!-- CHANGED: Added max-md:h-[calc(140vh-4rem)] and max-md:justify-between to push bottom content down on mobile -->
+  <!-- CHANGED: Uses justify-start on desktop, but max-md:justify-between to pins elements to top and bottom on mobile -->
   <div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-7xl mx-auto flex flex-col items-start justify-start max-md:h-[calc(140vh-4rem)] max-md:justify-between pt-4 md:pt-24 pb-20" style="filter: drop-shadow(rgba(0, 0, 0, 0.8) 0px 4px 6px);">
     
-    <!-- TOP BLOCK: Titles & Van Graphic Space -->
+    <!-- TOP BLOCK: Titles -->
     <div class="max-w-3xl w-full">
       <p class="text-gold font-bold tracking-[0.3em] uppercase mb-4 text-sm">Cultured Medical Transport</p>
       <h2 class="text-3xl md:text-5xl font-sans font-bold text-white leading-tight mb-8">
         Dependable Rides for Every Appointment <span class="text-gold">on the Coast</span>
       </h2>
+    </div>
 
-
+    <!-- CHANGED: Added pure whitespace container. h-64 gives a large 256px gap only on mobile screens -->
+    <div class="h-64 md:hidden w-full aria-hidden='true'"></div>
 
     <!-- BOTTOM BLOCK: Paragraph Description & Call-to-Action Buttons -->
     <div class="max-w-3xl w-full max-md:mt-auto">
@@ -159,6 +161,7 @@
 
   </div>
 </section>
+
 
 
 
