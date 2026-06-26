@@ -392,18 +392,27 @@ Our fleet is built with safety, reliability, and patient comfort at its core. We
 </div>       
 </div>
 </div>
-<div class="lg:w-1/2 relative flex flex-col gap-6">
+<!-- CHANGED: Replaced flex with a forced 1-column grid layout and block overrides -->
+<div class="lg:w-1/2 relative grid grid-cols-1 gap-6 block clear-both">
   <!-- Background Glow Effect -->
-  <div class="absolute -right-40 -top-40 w-96 h-96 bg-gold/10 rounded-full blur-[100px] pointer-events-none"></div>
-  <!-- IMAGE 1: The Base / Bottom Layer -->
-  <img alt="Our Fleet Van Back Layer" class="absolute top-8 left-8 z-10 w-[85%] rounded-2xl shadow-lg opacity-60 scale-95" src="back.png">
-
-  <!-- IMAGE 2: The Middle Layer -->
-  <img alt="Our Fleet Van Middle Layer" class="absolute top-4 left-4 z-20 w-[90%] rounded-2xl shadow-xl opacity-80 scale-98" src="commercial-thumbnail.png">
-
-  <!-- IMAGE 3: The Front / Main Layer -->
-  <img alt="Our Fleet Van Front Layer" class="relative z-30 w-[95%] rounded-2xl shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)]" src="front-seat.png">
+  <div class="absolute -right-40 -top-40 w-96 h-96 bg-gold/10 rounded-full blur-[100px] pointer-events-none z-0"></div>
+  
+  <!-- IMAGE 1 -->
+  <div class="w-full block">
+    <img alt="Our Fleet Van 1" class="relative z-10 w-full h-auto rounded-2xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)]" src="front-seat.png">
+  </div>
+  
+  <!-- IMAGE 2 -->
+  <div class="w-full block">
+    <img alt="Our Fleet Van 2" class="relative z-10 w-full h-auto rounded-2xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)]" src="commercial-thumbnail.png">
+  </div>
+  
+  <!-- IMAGE 3 -->
+  <div class="w-full block">
+    <img alt="Our Fleet Van 3" class="relative z-10 w-full h-auto rounded-2xl shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)]" src="back.png">
+  </div>
 </div>
+
 
 </div>
 </section>
