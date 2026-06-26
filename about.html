@@ -122,35 +122,6 @@
                               radial-gradient(at 100% 100%, rgba(0, 0, 0, 0.05) 0px, transparent 50%);
         }
     </style>
-</head>
-<body class="bg-surface text-on-surface font-body overflow-x-hidden">
-<!-- Desktop Header -->
-<!-- Updated Desktop Header with Larger Logo -->
-<!-- Desktop Header -->
-<!-- Updated Desktop Header with Larger Logo -->
-<header class="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-md text-white border-b border-white/10 hidden md:block">
-  <div class="max-w-7xl mx-auto px-margin-desktop h-20 flex items-center justify-between">
-    <a class="flex items-center gap-3" href="#">
-      <img alt="Cultured Logo" class="w-12 h-12 object-contain" src="culltured-logo-adjusted.png">
-      <div class="flex flex-col">
-        <span class="text-sm font-bold tracking-widest leading-none">CULTURED MEDICAL TRANSPORT</span>
-        <span class="text-gold text-[10px] font-medium tracking-wider mt-1 uppercase">Gulf Coast Professional Care</span>
-      </div>
-    </a>
-
-    <nav class="flex items-center gap-8">
-      <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#">Home</a>
-      <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#services">Services</a>
-      <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="#fleet">Fleet</a>
-      <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="about.html">About Us</a>
-      <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors text-gold" href="#contact">Request A Ride</a>
-      <a class="bg-gold text-black px-6 py-3 rounded text-[11px] font-extrabold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg active:scale-95" href="#contact">
-        Request Transportation
-      </a>
-    </nav>
-  </div> <!-- FIXED: Added missing closing div for max-w-7xl wrapper -->
-</header> <!-- FIXED: Added missing closing header for Desktop Viewports -->
-
 <!-- Mobile Header -->
 <header class="fixed top-0 w-full z-50 bg-black text-white px-margin-mobile py-3 border-b border-white/10 md:hidden flex items-center justify-between">
   <!-- Left Side: Logo & Branding -->
@@ -164,15 +135,18 @@
   
   <!-- Right Side items grouped into a row flexbox container -->
   <div class="flex items-center gap-4">
-<!-- Update desktop link too so it points to the new page -->
-   <a class="text-xs font-bold uppercase tracking-widest hover:text-gold transition-colors" href="about.html">About Us</a>
-
-          
+    <!-- Cleaned up link with correct font sizing for mobile alignment -->
+    <a class="text-[10px] font-black uppercase tracking-wider text-white/80 hover:text-gold transition-colors" href="about.html">
+      About Us
+    </a>
+    
+    <!-- Existing Action Button for Mobile Screens -->
     <a class="bg-gold text-black px-4 py-2 rounded text-[10px] font-black uppercase tracking-wider shadow-md" href="#contact">
       Request
     </a>
   </div>
 </header>
+
 <main class="pt-20">
 <!-- Hero Section: Our Story -->
 <section class="relative overflow-hidden hero-mesh py-xl px-margin-mobile md:px-margin-desktop">
