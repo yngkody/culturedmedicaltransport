@@ -227,9 +227,16 @@
 </div>
 </div>
 <div class="lg:w-1/2 order-1 lg:order-2">
-<div class="rounded-2xl overflow-hidden shadow-2xl relative aspect-[4/3]">
-<img alt="Our Staff" class="w-full h-full object-contain" src="about-us-graphic.png">
+<!-- THE CONTAINER FRAME -->
+<!-- REMOVE any fixed height classes (like h-64, h-[400px], or h-full) from this parent div -->
+<div class="w-full rounded-lg overflow-hidden shadow-md">
+  
+  <!-- THE IMAGE -->
+  <!-- CHANGED: Changed h-full to h-auto and removed object-cover/object-contain entirely -->
+  <img alt="Our Staff" class="w-full h-auto" src="about-us-graphic.png">
+
 </div>
+
 </div>
 </div>
 </section>
